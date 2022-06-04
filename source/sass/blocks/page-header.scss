@@ -1,8 +1,12 @@
 .page-header {
   display: flex;
-  background-color: lightblue;
+  background-color: $bcg-header;
   padding: 10px 16px;
+
   @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 10px 140px;
+    background-color: rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -13,4 +17,21 @@
 
 .page-header-img {
   margin-right: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 78px;
+    margin-top: 10px;
+  }
+}
+
+.page-header__name {
+  font-family: "Segoe-UI", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
 }
