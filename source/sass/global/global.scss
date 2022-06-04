@@ -32,9 +32,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 200px;
   padding: 14px 32px;
   background-color: $btn-color;
-  border: none;
+  border: 1px solid $btn-color;
   border-radius: 60px;
   cursor: pointer;
 
@@ -42,9 +43,25 @@ a {
     margin-left: auto;
   }
 
-  // &:hover {
+  &--tt-upper {
+    text-transform: uppercase;
+  }
 
-  // }
+  &--mb28 {
+    margin-bottom: 28px;
+  }
+
+  & span {
+    font-family: "Segoe-UI", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $basic-black;
+  }
 }
 
 .mobile-only {

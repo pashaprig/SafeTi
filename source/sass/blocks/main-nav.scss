@@ -81,16 +81,6 @@
   }
 }
 
-.main-nav__item span {
-  font-family: "Segoe-UI", "Arial", sans-serif;
-
-  @media (max-width: $tablet-width) {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 120%;
-  }
-}
-
 .main-nav__toggle {
   position: absolute;
   top: 15px;
