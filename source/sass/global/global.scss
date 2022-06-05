@@ -39,6 +39,11 @@ a {
   border-radius: 60px;
   cursor: pointer;
 
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $basic-black;
+  }
+
   &--ml-auto {
     margin-left: auto;
   }
@@ -51,16 +56,21 @@ a {
     margin-bottom: 28px;
   }
 
+  &--inverse {
+    background-color: $basic-white;
+    border: 1px solid $basic-white;
+  }
+
+  &--inverse:hover {
+    background-color: $btn-color;
+    border: 1px solid $btn-color;
+  }
+
   & span {
     font-family: "Segoe-UI", "Arial", sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 120%;
-  }
-
-  &:hover {
-    background-color: transparent;
-    border: 1px solid $basic-black;
   }
 }
 
