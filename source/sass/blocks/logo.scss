@@ -1,0 +1,55 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &--footer {
+    margin-right: 33px;
+  }
+}
+
+.logo__img {
+  margin-right: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 78px;
+    margin-top: 10px;
+
+    &--footer {
+      margin-top: 0;
+      margin-right: 10px;
+    }
+  }
+}
+
+.logo__name {
+  font-family: "Segoe-UI", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+
+  &--footer {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+
+    &--footer {
+      font-weight: 700;
+    }
+  }
+}
+
+.page-footer__policy {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+  }
+}

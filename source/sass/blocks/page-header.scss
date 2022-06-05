@@ -9,29 +9,3 @@
     background-color: rgba(255, 255, 255, 0.4);
   }
 }
-
-.page-header__img-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.page-header-img {
-  margin-right: 6px;
-
-  @media (min-width: $tablet-width) {
-    width: 70px;
-    height: 78px;
-    margin-top: 10px;
-  }
-}
-
-.page-header__name {
-  font-family: "Segoe-UI", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 120%;
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-  }
-}

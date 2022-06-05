@@ -1,10 +1,13 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: lightcoral;
+  align-items: center;
+  padding: 16px 16px 35px;
+  background-color: $bcg-header;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 138px;
   }
 }
