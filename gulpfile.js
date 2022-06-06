@@ -13,6 +13,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
+const concat = require('gulp-concat');
 
 // Styles
 
@@ -44,15 +45,16 @@ const html = () => {
 exports.html = html;
 
 // Scripts
-var concat = require('gulp-concat');
+
 const scripts = () => {
-  // return gulp.src("source/js/*.js")
+  // return gulp.src("source/js/slider.js")
   //   .pipe(terser())
-  //   .pipe(rename("script.min.js"))
+  //   .pipe(rename("script.js"))
   //   .pipe(gulp.dest("build/js"))
   //   .pipe(sync.stream());
 
     return gulp.src('source/js/*.js') // путь к папке со скриптами
+    .pipe(terser())
     .pipe(concat('script.js')) // в какой файл объединить
     .pipe(gulp.dest('build/js'))
     .pipe(sync.stream());
@@ -155,7 +157,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/js/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 

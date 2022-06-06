@@ -15,5 +15,3 @@ navToggle.addEventListener('click', function() {
     navButtonText.classList.remove('visually-hidden');
   }
 });
-
-
