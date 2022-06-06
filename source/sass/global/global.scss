@@ -26,6 +26,10 @@ ul {
 
 a {
   text-decoration: none;
+
+  & span {
+    color: $basic-black;
+  }
 }
 
 .btn {
@@ -64,6 +68,10 @@ a {
   &--inverse:hover {
     background-color: $btn-color;
     border: 1px solid $btn-color;
+  }
+
+  &--p6-14 {
+    padding: 6px 14px;
   }
 
   & span {
