@@ -1,13 +1,51 @@
 .values {
   padding: 0 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 138px;
+  }
+}
+
+.values__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .values__item {
   position: relative;
+  min-width: 343px;
+  max-width: 370px;
   margin-bottom: 10px;
   background-color: $bcg-legend;
   box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
+
+  & > .values__hide {
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    opacity: 0;
+  }
+
+  &.active > .values__hide {
+    position: relative;
+    height: auto;
+    padding: 14px 15px 16px;
+    opacity: 1;
+    transition: opacity 1.5s;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 370px;
+    align-self: flex-start;
+  }
 }
 
 .values__visible {
@@ -15,20 +53,6 @@
   padding: 30px 15px;
   border-radius: 16px;
   box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-}
-
-.values__hide {
-  padding: 14px 15px 16px;
-  opacity: 1;
-  transition: all 2s;
-
-  &--hide {
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    opacity: 0;
-    transition: all 2s;
-  }
 }
 
 .values__about {
@@ -53,6 +77,11 @@
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 47px;
+  }
 }
 
 .values__card-title {
@@ -66,6 +95,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  svg{
+    pointer-events: none;
+  }
 
   &:hover {
     opacity: 0.6;
