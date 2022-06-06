@@ -44,12 +44,17 @@ const html = () => {
 exports.html = html;
 
 // Scripts
-
+var concat = require('gulp-concat');
 const scripts = () => {
-  return gulp.src("source/js/script.js")
-    .pipe(terser())
-    .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("build/js"))
+  // return gulp.src("source/js/*.js")
+  //   .pipe(terser())
+  //   .pipe(rename("script.min.js"))
+  //   .pipe(gulp.dest("build/js"))
+  //   .pipe(sync.stream());
+
+    return gulp.src('source/js/*.js') // путь к папке со скриптами
+    .pipe(concat('script.js')) // в какой файл объединить
+    .pipe(gulp.dest('build/js'))
     .pipe(sync.stream());
 }
 
