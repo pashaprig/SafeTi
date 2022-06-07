@@ -2,7 +2,8 @@
   padding: 0 16px;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 138px;
+    min-height: 450px;
+    padding: 80px 138px 0;
   }
 }
 
@@ -96,7 +97,7 @@
   border: none;
   cursor: pointer;
 
-  svg{
+  svg {
     pointer-events: none;
   }
 
