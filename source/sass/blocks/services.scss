@@ -1,0 +1,38 @@
+.services {
+  padding: 20px 16px;
+}
+
+.services__title-wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 0.5px solid $basic-black;
+}
+
+.services__title-img {
+  margin-right: 8px;
+}
+
+.services__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.services__item {
+  display: flex;
+  padding: 10px 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  border-bottom: 0.5px solid $basic-black;
+
+  &:last-child {
+    border-bottom: none
+  }
+
+  span {
+    margin-right: 4px;
+    display: flex;
+  }
+}
