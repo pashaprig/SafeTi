@@ -6,9 +6,110 @@
   background: #FFFFFF;
   box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
+  width: 40%;
+}
+.form input {
+  border: 1px solid rgba(202, 202, 202, 1);
+  padding: 13px 16px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  border-radius: 46px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-  @media (min-width: $tablet-width) {
-    box-sizing: border-box;
-    min-height: 428px;
-  }
+.form label {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 4px;
+}
+
+label.error {
+  margin-top: 4px;
+  color: $error-red
+}
+
+.form .user-name-label {
+  margin-top: 0;
+}
+
+.iti input {
+  width: 100%;
+}
+.iti{
+  width: 100%;
+}
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent !important;
+  height: 44px;
+}
+
+.form input::placeholder {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.submit_btn {
+  margin-top: 32px;
+}
+
+/*checkbox*/
+.checkbox-group {
+  position: relative;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+input[type="checkbox"]::before {
+  position: absolute;
+  content: '';
+  background: url(/../img/checked.svg);
+  display: block;
+  width: 10px;
+  height: 7px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 3px;
+  left: 2px;
+}
+
+input[type="checkbox"]:checked {
+  color: white;
+  border-color: $btn-color;
+  background: $btn-color;
+}
+
+.form .checkbox-label {
+  margin: 0;
+}
+
+.checkbox-label a {
+  color: #565656;
+}
+
+#agreement-error {
+  position: absolute;
+  top: 15px;
 }

@@ -190,3 +190,80 @@ $(window).on("load", function () {
 		});
 	}, 1000);
 });
+
+//second form
+var input2 = document.querySelector("#phone2");
+var phoneInput2 = window.intlTelInput(input2, {
+	separateDialCode: true,
+	utilsScript:
+		"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+	initialCountry: "auto",
+	excludeCountries: ["UA"],
+	geoIpLookup: function (success, failure) {
+		$.get("https://ipinfo.io", function () {
+		}, "jsonp").always(function (resp) {
+			var countryCode = resp.country !== undefined && checkCountry(resp.country) ? resp.country : "RU";
+			console.log(countryCode);
+			success(countryCode);
+		});
+	},
+});
+
+$("#leadform2").validate({
+	rules: {
+		phone2: {
+			required: true,
+			validNumber: {
+				object: phoneInput2,
+			},
+		},
+		name: {
+			required: true,
+			alphanumeric: true,
+		},
+		email: {
+			required: true,
+			email:false,
+			emailValidation: true,
+		},
+                 agreement: {
+                         required: true,
+          }
+	},
+	messages: {
+		phone2: {
+			required: "Это поле обязательное",
+		},
+		name: {
+			required: "Это поле обязательное",
+		},
+		email: {
+			required: "Это поле обязательное"
+		},
+                 agreement: {
+                         required: "Это поле обязательное"
+        }
+            
+	},
+	submitHandler: function (form, event) {
+		sendAjaxForm(form);
+		return false;
+
+	},
+});
+
+$(window).on("load", function () {
+	setTimeout(function () {
+		var mask1 = jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9);
+
+		$(document).ready(function () {
+			jQuery("#phone2").mask(mask1, {autoclear: false});
+		});
+
+		jQuery("#phone2").on("countrychange", function (e, countryData) {
+			jQuery("#phone2").val("");
+			var mask1 = $("#phone2").attr("placeholder").replace(/[0-9]/g, 9);
+			jQuery("#phone2").mask(mask1, {autoclear: false});
+		});
+	}, 1000);
+});
