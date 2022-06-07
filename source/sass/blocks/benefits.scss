@@ -62,7 +62,7 @@
     margin-bottom: 0;
   }
 
-  & .benefits__hide-block{
+  & .benefits__hide-block {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -87,7 +87,7 @@
     width: auto;
     min-height: 160px;
     background-color: $basic-white;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 16px 0 0;
     transform: translateY(0);
     transition: transform 0.5s linear;
 
@@ -122,7 +122,7 @@
     width: 153px;
   }
 
-  & button>span {
+  & button > span {
     font-size: 22px;
   }
 
