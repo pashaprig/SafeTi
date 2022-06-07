@@ -6,7 +6,10 @@
   background: $basic-white;
   box-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
-  width: 40%;
+  width: 100%;
+  @media (min-width: $tablet-width) {
+    width: 40%;
+  }
 }
 .form input {
   border: 1px solid rgba(202, 202, 202, 1);
@@ -32,7 +35,7 @@
 
 label.error {
   margin-top: 4px;
-  color: $error-red
+  color: $error-red;
 }
 
 .form .user-name-label {
@@ -42,7 +45,7 @@ label.error {
 .iti input {
   width: 100%;
 }
-.iti{
+.iti {
   width: 100%;
 }
 .iti--separate-dial-code .iti__selected-flag {
@@ -84,7 +87,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"]::before {
   position: absolute;
-  content: '';
+  content: "";
   background: url(/../img/checked.svg);
   display: block;
   width: 10px;
@@ -111,5 +114,16 @@ input[type="checkbox"]:checked {
 
 #agreement-error {
   position: absolute;
-  top: 15px;
+  top: 25px;
+}
+.form_message.error.inactive {
+  display: none;
+  margin: 15px 0;
+  background-color: #ffd4d4;
+  border: 2px dashed #ce0909;
+  border-radius: 10px;
+  padding: 20px;
+}
+.form_message.error.active {
+  display: block;
 }
