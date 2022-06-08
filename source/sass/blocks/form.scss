@@ -1,4 +1,5 @@
 .form {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -7,10 +8,12 @@
   box-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   width: 100%;
+
   @media (min-width: $tablet-width) {
     width: 40%;
   }
 }
+
 .form input {
   border: 1px solid rgba(202, 202, 202, 1);
   padding: 13px 16px;
@@ -45,9 +48,11 @@ label.error {
 .iti input {
   width: 100%;
 }
+
 .iti {
   width: 100%;
 }
+
 .iti--separate-dial-code .iti__selected-flag {
   background-color: transparent !important;
   height: 44px;
@@ -115,6 +120,7 @@ input[type="checkbox"]:checked {
 #agreement-error {
   position: absolute;
   top: 25px;
+
 }
 .form_message.error.inactive {
   display: none;
@@ -124,6 +130,7 @@ input[type="checkbox"]:checked {
   border-radius: 10px;
   padding: 20px;
 }
+
 .form_message.error.active {
   display: block;
 }
