@@ -124,13 +124,13 @@
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#places">Отношения с инвесторами</a></li>
-          <li class="main-nav__item"><a href="#price">Планы доходов</a></li>
-          <li class="main-nav__item"><a href="#price">Услуги</a></li>
+          <li class="main-nav__item"><a href="#legend">Отношения с инвесторами</a></li>
+          <li class="main-nav__item"><a href="#values">Планы доходов</a></li>
+          <li class="main-nav__item"><a href="#">Услуги</a></li>
           <li class="main-nav__item">
-            <button class="btn btn--ml-auto btn--tt-upper" type="button">
+            <a class="btn btn--ml-auto btn--tt-upper" href="#legend">
               <span>ОТКРЫТЬ СЧЕТ</span>
-            </button>
+            </a>
           </li>
         </ul>
         <button class="main-nav__toggle" type="button">
@@ -140,7 +140,7 @@
     </header>
 
     <main class="main">
-      <section class="legend">
+      <section class="legend" id="legend">
         <h1 class="legend__title">Экосистема сбережения и приумножения</h1>
         <div class="legend__wrapper">
           <button class="btn btn--tt-upper btn--mb28 mobile-only" type="button"><span>ОТКРЫТЬ СЧЕТ</span></button>
@@ -186,7 +186,7 @@
             <h3 class="benefits__heading">Защита от санкций</h3>
             <div class="benefits__button-wrapper">
               <button class="btn btn--inverse benefits__more"><span>Подробнее</span></button>
-              <button class="btn"><span>Получить</span></button>
+              <a href="#legend" class="btn"><span>Получить</span></a>
             </div>
           </li>
           <li class="benefits__item">
@@ -202,7 +202,7 @@
             <h3 class="benefits__heading">Резистентность инфляции</h3>
             <div class="benefits__button-wrapper">
               <button class="btn btn--inverse benefits__more"><span>Подробнее</span></button>
-              <button class="btn"><span>Получить</span></button>
+              <a href="#legend" class="btn"><span>Получить</span></a>
             </div>
           </li>
           <li class="benefits__item">
@@ -217,7 +217,7 @@
             <h3 class="benefits__heading">Безопасное приумножение</h3>
             <div class="benefits__button-wrapper">
               <button class="btn btn--inverse benefits__more"><span>Подробнее</span></button>
-              <button class="btn"><span>Получить</span></button>
+              <a href="#legend" class="btn"><span>Получить</span></a>
             </div>
           </li>
         </ul>
@@ -233,7 +233,7 @@
           <div class="slide slide--third"><img src="img/slide2.jpg" alt="покупайте необходимое автоматически"></div>
         </div>
       </section>
-      <div class="values">
+      <div class="values" id="values">
         <h2 class="values__title">Выбирайте подходящее именно&nbsp;вам</h2>
         <ul class="values__list">
           <li class="values__item">
@@ -251,7 +251,7 @@
               </div>
               <div class="values__wrapper">
                 <span class="values__value">мин €300 чтобы</span>
-                <a class="btn btn--tt-upper btn--p6-14" href="#"><span>НАЧАТЬ</span></a>
+                <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>НАЧАТЬ</span></a>
               </div>
             </div>
             <div class="values__hide">
@@ -276,7 +276,7 @@
               </div>
               <div class="values__wrapper">
                 <span class="values__value">мин €400 чтобы</span>
-                <a class="btn btn--tt-upper btn--p6-14" href="#"><span>НАЧАТЬ</span></a>
+                <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>НАЧАТЬ</span></a>
               </div>
             </div>
             <div class="values__hide">
@@ -301,7 +301,7 @@
               </div>
               <div class="values__wrapper">
                 <span class="values__value">мин €950 чтобы</span>
-                <a class="btn btn--tt-upper btn--p6-14" href="#"><span>НАЧАТЬ</span></a>
+                <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>НАЧАТЬ</span></a>
               </div>
             </div>
             <div class="values__hide">
@@ -359,11 +359,26 @@
         <div class="call">
           <h2 class="call__title">Готовы начать инвестировать и хотите дельный совет?</h2>
           <div class="info__slider" id="call__slider">
-            <div class="slide slide--first"><img src="img/tinkof1.jpg" width="375" height="185" alt="Задумчивый человек палец у подбородка"></div>
-            <div class="slide slide--second"><img src="img/tinkof2.jpg" width="375" height="185" alt="Задумчивый человек палец опёрся на кулак"></div>
-            <div class="slide slide--third"><img src="img/tinkof3.jpg" width="375" height="185" alt="Задумчивый человек взгляд вперёд"></div>
+            <div class="slide slide--first">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="img/tinkof1-desktop.jpg">
+                <img src="img/tinkof1.jpg" width="375" height="185" alt="Задумчивый человек палец у подбородка">
+              </picture>
+            </div>
+            <div class="slide slide--second">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="img/tinkof2-desktop.jpg">
+                <img src="img/tinkof2.jpg" width="375" height="185" alt="Задумчивый человек палец опёрся на кулак">
+              </picture>
+            </div>
+            <div class="slide slide--third">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="img/tinkof3-desktop.jpg">
+                <img src="img/tinkof3.jpg" width="375" height="185" alt="Задумчивый человек взгляд вперёд">
+              </picture>
+            </div>
           </div>
-          <a class="btn btn--tt-upper btn--p6-14" href="#"><span>ПЕРЕЗВОНИТЕ МНЕ</span></a>
+          <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>ПЕРЕЗВОНИТЕ МНЕ</span></a>
         </div>
       </section>
     </main>

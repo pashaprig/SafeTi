@@ -1,8 +1,9 @@
 .info {
   padding: 30px 16px;
   box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
-    padding: 80px 138px;
+    padding: 80px 138px 0;
   }
 }
 
