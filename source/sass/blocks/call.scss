@@ -1,24 +1,28 @@
 .call {
-  height: 300px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('');
+  position: relative;
+  height: 185px;
+  font-family: "Segoe-UI", "Arial", sans-serif;
+
+  a {
+    z-index: 1;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 212px;
+  }
 }
-// Вариант 1, содержит пути к картинкам в массиве, имена могут быть любые.
 
-// var bgFolder = 'bg/';
-// var backgrounds = [
-//   'bg0.jpg',
-//   'bg1.jpg',
-//   'bg2.jpg',
-//   'bg3.jpg',
-//   'bg4.jpg'
-// ];
-// var rndBg = Math.floor(Math.random() * 5);
-// document.body.style.backgroundImage = 'url(' + bgFolder + backgrounds[rndBg] + ')';
-// Вариант 2. Не нужно забивать картинки в массив. Но имена картинок должны быть одинаковые и отличаться только цифрой
-
-// var bgPath = 'bg/bg';
-// var imagesNumber = 5;
-// var rndBg =  Math.floor(Math.random() * imagesNumber);
-// document.body.style.backgroundImage = 'url(' + bgPath + rndBg + '.jpg)';
+.call__title {
+  z-index: 1;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 220px;
+  padding: 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+}
