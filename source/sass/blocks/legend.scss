@@ -29,33 +29,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  width: 100%;
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     gap: 25px;
+  }
+}
+.legend__card{
+  padding:56.25% 0 0 0;
+  position:relative;
+  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0px;
   }
 }
 
 .legend__card-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  width: 100%;
   @media (min-width: $tablet-width) {
+    width: 60%;
     position: relative;
   }
 }
 
 .legend__icon {
+  margin: auto;
   margin-bottom: 16px;
-
+  display: block;
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: -50px;
     width: 294px;
     height: 36px;
     margin-bottom: 0;
+    bottom: -50px;
+    left: 50%;
+    margin-left: -147px;
   }
 }
 
