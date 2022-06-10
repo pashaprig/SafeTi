@@ -1,8 +1,8 @@
 $('#info__slider').slick({
   dots: true,
   infinite: true,
-  autoplay:false,
-  speed: 300,
+  autoplay: true,
+  speed: 500,
   arrows: false,
 });
 
@@ -19,6 +19,6 @@ $('#services__slider').slick({
   infinite: true,
   speed: 300,
   zIndex: 0,
-  prevArrow:"<button type='button' class='btn btn--inverse prev'><span>Назад</span></button>",
-  nextArrow:"<button type='button' class='btn btn--inverse next'><span>Далее</span></button>",
+  prevArrow: "<button type='button' class='btn btn--inverse prev'><span>Назад</span></button>",
+  nextArrow: "<button type='button' class='btn btn--inverse next'><span>Далее</span></button>",
 });

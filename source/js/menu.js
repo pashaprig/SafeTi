@@ -15,3 +15,15 @@ navToggle.addEventListener('click', function() {
     navButtonText.classList.remove('visually-hidden');
   }
 });
+
+const links = document.querySelectorAll('.main-nav__item');
+
+const navLinckHandleClick = () => {
+  navMain.classList.add('main-nav--closed');
+  navMain.classList.remove('main-nav--opened');
+  navButtonText.classList.remove('visually-hidden');
+}
+
+links.forEach(link => {
+  link.addEventListener('click', navLinckHandleClick)
+})
