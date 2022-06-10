@@ -21,7 +21,7 @@
 
 .values__item {
   position: relative;
-  min-width: 343px;
+  width: 100%;
   max-width: 370px;
   margin-bottom: 10px;
   background-color: $bcg-legend;
@@ -80,12 +80,13 @@
 .values__title {
   margin-bottom: 10px;
   font-weight: 800;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 22px;
 
   @media (min-width: $tablet-width) {
-    font-size: 40px;
-    line-height: 47px;
+    margin-bottom: 18px;
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 
@@ -134,4 +135,10 @@
     font-size: 26px;
     line-height: 30px;
   }
+}
+
+.services__item-profit {
+  align-self: center;
+  margin-right: 0;
+  margin-left: auto;
 }

@@ -9,7 +9,7 @@ $('#info__slider').slick({
 $('#call__slider').slick({
   infinite: true,
   autoplay: true,
-  speed: 2000,
+  speed: 3000,
   arrows: false,
   fade: true,
   zIndex: 0,

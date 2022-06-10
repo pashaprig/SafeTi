@@ -12,12 +12,12 @@
 .benefits__title {
   margin-bottom: 9px;
   font-weight: 800;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 22px;
 
   @media (min-width: $tablet-width) {
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 
@@ -139,6 +139,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
@@ -150,15 +151,7 @@
 .benefits__img {
   object-fit: contain;
 
-  &--of-none {
-    object-position: 0 6px;
-  }
-
   @media (min-width: $tablet-width) {
     height: 170px;
-
-    &--of-none {
-      object-position: 0 15px;
-    }
   }
 }
