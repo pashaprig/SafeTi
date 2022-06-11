@@ -92,7 +92,7 @@ input[type="checkbox"] {
 input[type="checkbox"]::before {
   position: absolute;
   content: "";
-  background: url(../../img/checked.svg);
+  background: url(./../img/checked.svg);
   display: block;
   width: 10px;
   height: 7px;

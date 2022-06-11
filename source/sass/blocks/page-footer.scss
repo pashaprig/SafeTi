@@ -11,3 +11,13 @@
     padding: 16px 138px;
   }
 }
+
+.page-footer__policy {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

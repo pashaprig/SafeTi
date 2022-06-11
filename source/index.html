@@ -90,441 +90,458 @@
     }(window, document, 'ttq');
   </script>
   <!-- End TikTok Code -->
-  <header>
-    <header class="page-header">
-      <div class="logo">
-        <img class="logo__img" src="img/logo.png" alt="Шит-лабиринт" width="33" height="36">
-        <span class="logo__name">SafeTi</span>
-      </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#legend">Отношения с инвесторами</a></li>
-          <li class="main-nav__item"><a href="#values">Планы доходов</a></li>
-          <li class="main-nav__item"><a href="#services">Услуги</a></li>
-          <li class="main-nav__item">
-            <a class="btn btn--ml-auto btn--tt-upper" href="#legend">
-              <span>ОТКРЫТЬ СЧЕТ</span>
-            </a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle" type="button">
-          <span class="main-nav__open-btn-text">Mеню</span>
-        </button>
-      </nav>
-    </header>
+  <header class="page-header">
+    <div class="logo">
+      <img class="logo__img" src="img/logo.png" alt="Шит-лабиринт" width="33" height="36">
+      <span class="logo__name">SafeTi</span>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#legend">Отношения с инвесторами</a></li>
+        <li class="main-nav__item"><a href="#values">Планы доходов</a></li>
+        <li class="main-nav__item"><a href="#services">Услуги</a></li>
+        <li class="main-nav__item">
+          <a class="btn btn--ml-auto btn--tt-upper" href="#legend">
+            <span>ОТКРЫТЬ СЧЕТ</span>
+          </a>
+        </li>
+      </ul>
+      <button class="main-nav__toggle" type="button">
+        <span class="main-nav__open-btn-text">Mеню</span>
+      </button>
+    </nav>
+  </header>
 
-    <main class="main">
-      <section class="legend" id="legend">
-        <h1 class="legend__title">Экосистема сбережения и приумножения</h1>
-        <div class="legend__wrapper">
-          <button class="btn btn--tt-upper btn--mb28 mobile-only" type="button"><span>ОТКРЫТЬ СЧЕТ</span></button>
-          <div class="legend__card-wrapper">
-            <svg class="legend__icon" width="123" height="15" aria-label="">
-              <use xlink:href="img/sprite.svg#stars"></use>
-            </svg>
-            <div class="legend__card">
-              <iframe src="https://player.vimeo.com/video/718728477?h=40961bf52f&amp;badge=0&amp;autoplay=1&amp;muted=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:30px;" title="safe_land_3_1"></iframe>
+  <main class="main">
+    <section class="legend" id="legend">
+      <h1 class="legend__title">Экосистема сбережения и приумножения</h1>
+      <div class="legend__wrapper">
+        <button class="btn btn--tt-upper btn--mb28 mobile-only" type="button"><span>ОТКРЫТЬ СЧЕТ</span></button>
+        <div class="legend__card-wrapper">
+          <svg class="legend__icon" width="123" height="15" aria-label="">
+            <use xlink:href="img/sprite.svg#stars"></use>
+          </svg>
+          <div class="legend__card">
+            <iframe
+              src="https://player.vimeo.com/video/718728477?h=40961bf52f&amp;badge=0&amp;autoplay=1&amp;muted=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:30px;"
+              title="safe_land_3_1"></iframe>
+          </div>
+        </div>
+        <form action="" class="form" method="POST" id="leadform1">
+          <label class="user-name-label" for="name">Ваше Имя</label>
+          <input class="user-name" type="text" name="name" placeholder="Имя" id="name" />
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="your_email@gmail.com" id="email" />
+          <label for="phone1">Контактный телефон</label>
+          <input type="tel" name="phone1" placeholder="" id="phone1" />
+          <input id="realPhone1" class="hidden-phone" type="hidden" name="phone" value="" />
+          <input type="hidden" name="currency" value="eur">
+          <input id="country1" type="hidden" name="country" value="ru">
+          <input type="hidden" name="campaign_name" value="SafeTi">
+          <button class="btn btn--tt-upper submit_btn" type="submit"><span>ОТКРЫТЬ СЧЕТ</span></button>
+          <div class="checkbox-group">
+            <input type="checkbox" id="agreement1" name="agreement" value="true">
+            <label for="agreement1" class="checkbox-label">Согласен с пользовательским<br> соглашением</label>
+          </div>
+          <div class="form_message error inactive"></div>
+        </form>
+      </div>
+    </section>
+    <section class="benefits">
+      <h2 class="benefits__title">Сбережения и активы останутся с&nbsp;вами в любых условиях</h2>
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          <div class="benefits__img-wrapper">
+            <img class="benefits__img" src="./img/benefits1.png" width="343" height="160" alt="Флаг внутри щита">
+            <div class="benefits__hide-block">
+              <img src="./img/benefits1-icon.png" width="42" height="42" alt="Щит">
+              <p>Сделайте средства недостижимыми для любых санкций благодаря уникальным активам</p>
             </div>
           </div>
-          <form action="" class="form" method="POST" id="leadform1">
-            <label class="user-name-label" for="name">Ваше Имя</label>
-            <input class="user-name" type="text" name="name" placeholder="Имя" id="name" />
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="your_email@gmail.com" id="email" />
-            <label for="phone1">Контактный телефон</label>
-            <input type="tel" name="phone1" placeholder="" id="phone1" />
-            <input id="realPhone1" class="hidden-phone" type="hidden" name="phone" value="" />
-            <input type="hidden" name="currency" value="eur">
-            <input id="country1" type="hidden" name="country" value="ru">
-            <input type="hidden" name="campaign_name" value="SafeTi">
-            <button class="btn btn--tt-upper submit_btn" type="submit"><span>ОТКРЫТЬ СЧЕТ</span></button>
-            <div class="checkbox-group">
-              <input type="checkbox" id="agreement1" name="agreement" value="true">
-              <label for="agreement1" class="checkbox-label">Согласен с пользовательским<br> соглашением</label>
+          <h3 class="benefits__heading">Защита от санкций</h3>
+          <div class="benefits__button-wrapper">
+            <button class="btn btn--inverse benefits__more"><span>Подробнее</span></button>
+            <a href="#legend" class="btn"><span>Получить</span></a>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__img-wrapper">
+            <img class="benefits__img" src="./img/benefits2.jpg" width="343" height="160" alt="Деньги внутри щита">
+            <div class="benefits__hide-block">
+              <img src="./img/benefits2-icon.png" width="42" height="42" alt="Щит">
+              <p>Выбирайте сделку с высоким процентом прибыльности и оставьте переживания о повышении цен и налогов в
+                прошлом</p>
             </div>
-            <div class="form_message error inactive"></div>
-          </form>
-        </div>
-      </section>
-      <section class="benefits">
-        <h2 class="benefits__title">Сбережения и активы останутся с&nbsp;вами в любых условиях</h2>
-        <ul class="benefits__list">
-          <li class="benefits__item">
-            <div class="benefits__img-wrapper">
-              <img class="benefits__img" src="./img/benefits1.png" width="343" height="160" alt="Флаг внутри щита">
-              <div class="benefits__hide-block">
-                <img src="./img/benefits1-icon.png" width="42" height="42" alt="Щит">
-                <p>Сделайте средства недостижимыми для любых санкций благодаря уникальным активам</p>
-              </div>
+          </div>
+          <h3 class="benefits__heading">Резистентность инфляции</h3>
+          <div class="benefits__button-wrapper">
+            <button class="btn btn--inverse benefits__more"><span>Подробнее</span></button>
+            <a href="#legend" class="btn"><span>Получить</span></a>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__img-wrapper">
+            <img class="benefits__img" src="./img/benefits3.png" width="343" height="160" alt="Магнит внутри щита">
+            <div class="benefits__hide-block">
+              <img src="./img/benefits3-icon.png" width="42" height="42" alt="Щит">
+              <p>Получайте быстрый и надежный доступ к инвестиционным программам и международной торговле любыми
+                цифровыми активами</p>
             </div>
-            <h3 class="benefits__heading">Защита от санкций</h3>
-            <div class="benefits__button-wrapper">
-              <button class="btn btn--inverse benefits__more"><span>Подробнее</span></button>
-              <a href="#legend" class="btn"><span>Получить</span></a>
-            </div>
-          </li>
-          <li class="benefits__item">
-            <div class="benefits__img-wrapper">
-              <img class="benefits__img" src="./img/benefits2.jpg" width="343" height="160"
-                alt="Деньги внутри щита">
-              <div class="benefits__hide-block">
-                <img src="./img/benefits2-icon.png" width="42" height="42" alt="Щит">
-                <p>Выбирайте сделку с высоким процентом прибыльности и оставьте переживания о повышении цен и налогов в
-                  прошлом</p>
-              </div>
-            </div>
-            <h3 class="benefits__heading">Резистентность инфляции</h3>
-            <div class="benefits__button-wrapper">
-              <button class="btn btn--inverse benefits__more"><span>Подробнее</span></button>
-              <a href="#legend" class="btn"><span>Получить</span></a>
-            </div>
-          </li>
-          <li class="benefits__item">
-            <div class="benefits__img-wrapper">
-              <img class="benefits__img" src="./img/benefits3.png" width="343" height="160" alt="Магнит внутри щита">
-              <div class="benefits__hide-block">
-                <img src="./img/benefits3-icon.png" width="42" height="42" alt="Щит">
-                <p>Получайте быстрый и надежный доступ к инвестиционным программам и международной торговле любыми
-                  цифровыми активами</p>
-              </div>
-            </div>
-            <h3 class="benefits__heading">Безопасное приумножение</h3>
-            <div class="benefits__button-wrapper">
-              <button class="btn btn--inverse benefits__more"><span>Подробнее</span></button>
-              <a href="#legend" class="btn"><span>Получить</span></a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="info">
-        <h2 class="info__title desktop-only">Средства работают эффективно, где бы вы ни были</h2>
-        <div class="info__slider" id="info__slider">
-          <div class="slide slide--first"><img src="img/slide1.jpg" alt="Готовьтесь
+          </div>
+          <h3 class="benefits__heading">Безопасное приумножение</h3>
+          <div class="benefits__button-wrapper">
+            <button class="btn btn--inverse benefits__more"><span>Подробнее</span></button>
+            <a href="#legend" class="btn"><span>Получить</span></a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="info">
+      <h2 class="info__title desktop-only">Средства работают эффективно, где бы вы ни были</h2>
+      <div class="info__slider" id="info__slider">
+        <div class="slide slide--first"><img src="img/slide1.jpg" alt="Готовьтесь
           к изменениям
           в политике"></div>
-          <div class="slide slide--second"><img src="img/slide3.jpg" alt="Создайте резервный фонд">
-          </div>
-          <div class="slide slide--third"><img src="img/slide2.jpg" alt="покупайте необходимое автоматически"></div>
+        <div class="slide slide--second"><img src="img/slide3.jpg" alt="Создайте резервный фонд">
         </div>
-      </section>
-      <div class="values" id="values">
-        <h2 class="values__title">Выбирайте подходящее именно&nbsp;вам</h2>
-        <ul class="values__list">
-          <li class="values__item">
-            <div class="values__visible">
-              <div class="values__wrapper">
-                <div class="values__card-title-wrapper">
-                  <h3 class="values__card-title">Крипто-сектор</h3>
-                  <span class="values__card-profit">(предпол. выгода 25–200%)</span>
-                </div>
-                <button class="values__more" type="button">
-                  <svg class="values__icon" width="35" height="35" aria-label="Показать больше информаци">
-                    <use xlink:href="img/sprite.svg#points"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="values__wrapper">
-                <span class="values__value">мин €300 чтобы</span>
-                <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>НАЧАТЬ</span></a>
-              </div>
-            </div>
-            <div class="values__hide">
-              <p class="values__about">
-                Выгода на биржевой торговле криптовалютами и крипто-индексами. Используйте базовые и экзотические
-                криптопары, кросс-пары и крипто-индексы, доступные для торговли 24/7/365, без выходных и праздников.
-              </p>
-            </div>
-          </li>
-          <li class="values__item">
-            <div class="values__visible">
-              <div class="values__wrapper">
-                <div class="values__card-title-wrapper">
-                  <h3 class="values__card-title">Сектор торговли</h3>
-                  <span class="values__card-profit">(предпол. выгода 25–75%)</span>
-                </div>
-                <button class="values__more" type="button">
-                  <svg class="values__icon" width="35" height="35" aria-label="Показать больше информаци">
-                    <use xlink:href="img/sprite.svg#points"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="values__wrapper">
-                <span class="values__value">мин €400 чтобы</span>
-                <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>НАЧАТЬ</span></a>
-              </div>
-            </div>
-            <div class="values__hide">
-              <p class="values__about">
-                Увеличьте в 5 раз свои сбережения, торгуя акциями публичных компаний на Международной фондовой бирже с
-                помощью лицензированного инвестиционного посредника.
-              </p>
-            </div>
-          </li>
-          <li class="values__item">
-            <div class="values__visible">
-              <div class="values__wrapper">
-                <div class="values__card-title-wrapper">
-                  <h3 class="values__card-title">Автотрейдинг “Все включено”</h3>
-                  <span class="values__card-profit">(предпол. выгода 19–44%)</span>
-                </div>
-                <button class="values__more" type="button">
-                  <svg class="values__icon" width="35" height="35" aria-label="Показать больше информаци">
-                    <use xlink:href="img/sprite.svg#points"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="values__wrapper">
-                <span class="values__value">мин €950 чтобы</span>
-                <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>НАЧАТЬ</span></a>
-              </div>
-            </div>
-            <div class="values__hide">
-              <p class="values__about">
-                Используйте последние разработки в области автоматизированной биржевой торговли криптовалютами и
-                крипто-индексами, а также торговли акциями.
-              </p>
-            </div>
-          </li>
-        </ul>
+        <div class="slide slide--third"><img src="img/slide2.jpg" alt="покупайте необходимое автоматически"></div>
       </div>
-      <div class="users">
-        <div class="users__slider">
-          <div class="review__card review__card--user1">
-            <div class="review-name">
-                Валентин Брыков
+    </section>
+    <div class="values" id="values">
+      <h2 class="values__title">Выбирайте подходящее именно&nbsp;вам</h2>
+      <ul class="values__list">
+        <li class="values__item">
+          <div class="values__visible">
+            <div class="values__wrapper">
+              <div class="values__card-title-wrapper">
+                <h3 class="values__card-title">Крипто-сектор</h3>
+                <span class="values__card-profit">(предпол. выгода 25–200%)</span>
+              </div>
+              <button class="values__more" type="button">
+                <svg class="values__icon" width="35" height="35" aria-label="Показать больше информаци">
+                  <use xlink:href="img/sprite.svg#points"></use>
+                </svg>
+              </button>
             </div>
-            <div class="review__text">
-              “Нужно было раз попробовать, чтобы понять как выгодно вложиться. Стабильно реинвестирую, пока бизнес в России накрылся. Разобраться помогают прямо по телефону. Жаль, что нет отделений”
-           </div>
-           <button class="btn--toogle">
-          </button>
-          </div>
-          <div class="review__card review__card--user2">
-            <div class="review-name">
-              Анжела Тальянова
+            <div class="values__wrapper">
+              <span class="values__value">мин €300 чтобы</span>
+              <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>НАЧАТЬ</span></a>
             </div>
-            <div class="review__text">
-              “У мужа отобрали производство в пользу государства. Выехали из страны и не знали что делать. Поделили то, что осталось на короткосрочные и долгосрочные вклады. Хорошо, что сервис на русском и для русских, разобрались быстро”
-           </div>
-           <button class="btn--toogle">
-          </button>
           </div>
-          <div class="review__card review__card--user3">
-            <div class="review-name">
-              Серануш Авакян
+          <div class="values__hide">
+            <p class="values__about">
+              Выгода на биржевой торговле криптовалютами и крипто-индексами. Используйте базовые и экзотические
+              криптопары, кросс-пары и крипто-индексы, доступные для торговли 24/7/365, без выходных и праздников.
+            </p>
+          </div>
+        </li>
+        <li class="values__item">
+          <div class="values__visible">
+            <div class="values__wrapper">
+              <div class="values__card-title-wrapper">
+                <h3 class="values__card-title">Сектор торговли</h3>
+                <span class="values__card-profit">(предпол. выгода 25–75%)</span>
+              </div>
+              <button class="values__more" type="button">
+                <svg class="values__icon" width="35" height="35" aria-label="Показать больше информаци">
+                  <use xlink:href="img/sprite.svg#points"></use>
+                </svg>
+              </button>
             </div>
-            <div class="review__text">
-              “Хорошо понимаю Тинькова, котрый тут же сделал онлайн банк для таких же пострадавших от политиков, как он сам. Завела деньги, проблем нет. Сервис даже лучше чем в Тинькофф”
-           </div>
-           <button class="btn--toogle">
-          </button>
-          </div>
-          <div class="review__card review__card--user4">
-            <div class="review-name">
-              Ростислав Дерибойко
+            <div class="values__wrapper">
+              <span class="values__value">мин €400 чтобы</span>
+              <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>НАЧАТЬ</span></a>
             </div>
-            <div class="review__text">
-              “Пока в стране такое творится, перевел часть денег в крипту, от греха подальше. Учусь шортить с консультантом компании. На демо счете легко. Дождусь дивидендов и попробую шортить прямо на пляже”
-           </div>
-           <button class="btn--toogle">
-          </button>
           </div>
-          <div class="review__card review__card--user1">
-            <div class="review-name">
-                Валентин Брыков
+          <div class="values__hide">
+            <p class="values__about">
+              Увеличьте в 5 раз свои сбережения, торгуя акциями публичных компаний на Международной фондовой бирже с
+              помощью лицензированного инвестиционного посредника.
+            </p>
+          </div>
+        </li>
+        <li class="values__item">
+          <div class="values__visible">
+            <div class="values__wrapper">
+              <div class="values__card-title-wrapper">
+                <h3 class="values__card-title">Автотрейдинг “Все включено”</h3>
+                <span class="values__card-profit">(предпол. выгода 19–44%)</span>
+              </div>
+              <button class="values__more" type="button">
+                <svg class="values__icon" width="35" height="35" aria-label="Показать больше информаци">
+                  <use xlink:href="img/sprite.svg#points"></use>
+                </svg>
+              </button>
             </div>
-            <div class="review__text">
-              “Нужно было раз попробовать, чтобы понять как выгодно вложиться. Стабильно реинвестирую, пока бизнес в России накрылся. Разобраться помогают прямо по телефону. Жаль, что нет отделений”
-           </div>
-           <button class="btn--toogle">
-          </button>
-          </div>
-          <div class="review__card review__card--user2">
-            <div class="review-name">
-              Анжела Тальянова
+            <div class="values__wrapper">
+              <span class="values__value">мин €950 чтобы</span>
+              <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>НАЧАТЬ</span></a>
             </div>
-            <div class="review__text">
-              “У мужа отобрали производство в пользу государства. Выехали из страны и не знали что делать. Поделили то, что осталось на короткосрочные и долгосрочные вклады. Хорошо, что сервис на русском и для русских, разобрались быстро”
-           </div>
-           <button class="btn--toogle">
-          </button>
           </div>
-          <div class="review__card review__card--user3">
-            <div class="review-name">
-              Серануш Авакян
-            </div>
-            <div class="review__text">
-              “Хорошо понимаю Тинькова, котрый тут же сделал онлайн банк для таких же пострадавших от политиков, как он сам. Завела деньги, проблем нет. Сервис даже лучше чем в Тинькофф”
-           </div>
-           <button class="btn--toogle">
-          </button>
+          <div class="values__hide">
+            <p class="values__about">
+              Используйте последние разработки в области автоматизированной биржевой торговли криптовалютами и
+              крипто-индексами, а также торговли акциями.
+            </p>
           </div>
-          <div class="review__card review__card--user4">
-            <div class="review-name">
-              Ростислав Дерибойко
-            </div>
-            <div class="review__text">
-              “Пока в стране такое творится, перевел часть денег в крипту, от греха подальше. Учусь шортить с консультантом компании. На демо счете легко. Дождусь дивидендов и попробую шортить прямо на пляже”
-           </div>
-           <button class="btn--toogle">
-          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="users">
+      <div class="users__slider">
+        <div class="review__card review__card--user1">
+          <div class="review-name">
+            Валентин Брыков
           </div>
+          <div class="review__text">
+            “Нужно было раз попробовать, чтобы понять как выгодно вложиться. Стабильно реинвестирую, пока бизнес в
+            России накрылся. Разобраться помогают прямо по телефону. Жаль, что нет отделений”
+          </div>
+          <button class="btn--toogle">
+          </button>
         </div>
-        <div class="user__range-slider" id="range-slider"></div>
+        <div class="review__card review__card--user2">
+          <div class="review-name">
+            Анжела Тальянова
+          </div>
+          <div class="review__text">
+            “У мужа отобрали производство в пользу государства. Выехали из страны и не знали что делать. Поделили то,
+            что осталось на короткосрочные и долгосрочные вклады. Хорошо, что сервис на русском и для русских,
+            разобрались быстро”
+          </div>
+          <button class="btn--toogle">
+          </button>
+        </div>
+        <div class="review__card review__card--user3">
+          <div class="review-name">
+            Серануш Авакян
+          </div>
+          <div class="review__text">
+            “Хорошо понимаю Тинькова, котрый тут же сделал онлайн банк для таких же пострадавших от политиков, как он
+            сам. Завела деньги, проблем нет. Сервис даже лучше чем в Тинькофф”
+          </div>
+          <button class="btn--toogle">
+          </button>
+        </div>
+        <div class="review__card review__card--user4">
+          <div class="review-name">
+            Ростислав Дерибойко
+          </div>
+          <div class="review__text">
+            “Пока в стране такое творится, перевел часть денег в крипту, от греха подальше. Учусь шортить с
+            консультантом компании. На демо счете легко. Дождусь дивидендов и попробую шортить прямо на пляже”
+          </div>
+          <button class="btn--toogle">
+          </button>
+        </div>
+        <div class="review__card review__card--user1">
+          <div class="review-name">
+            Валентин Брыков
+          </div>
+          <div class="review__text">
+            “Нужно было раз попробовать, чтобы понять как выгодно вложиться. Стабильно реинвестирую, пока бизнес в
+            России накрылся. Разобраться помогают прямо по телефону. Жаль, что нет отделений”
+          </div>
+          <button class="btn--toogle">
+          </button>
+        </div>
+        <div class="review__card review__card--user2">
+          <div class="review-name">
+            Анжела Тальянова
+          </div>
+          <div class="review__text">
+            “У мужа отобрали производство в пользу государства. Выехали из страны и не знали что делать. Поделили то,
+            что осталось на короткосрочные и долгосрочные вклады. Хорошо, что сервис на русском и для русских,
+            разобрались быстро”
+          </div>
+          <button class="btn--toogle">
+          </button>
+        </div>
+        <div class="review__card review__card--user3">
+          <div class="review-name">
+            Серануш Авакян
+          </div>
+          <div class="review__text">
+            “Хорошо понимаю Тинькова, котрый тут же сделал онлайн банк для таких же пострадавших от политиков, как он
+            сам. Завела деньги, проблем нет. Сервис даже лучше чем в Тинькофф”
+          </div>
+          <button class="btn--toogle">
+          </button>
+        </div>
+        <div class="review__card review__card--user4">
+          <div class="review-name">
+            Ростислав Дерибойко
+          </div>
+          <div class="review__text">
+            “Пока в стране такое творится, перевел часть денег в крипту, от греха подальше. Учусь шортить с
+            консультантом компании. На демо счете легко. Дождусь дивидендов и попробую шортить прямо на пляже”
+          </div>
+          <button class="btn--toogle">
+          </button>
+        </div>
       </div>
-      <section>
-        <div class="services" id="services">
-          <div class="mobile-only">
-            <div class="services__title-wrapper">
-              <img class="services__title-img" src="./img/service-shield.png" width="32" height="36"
-                alt="Щит с галочкой">
-              <h2 class="services__title">Детально об услугах</h2>
-            </div>
-            <ul class="services__list">
-              <li class="services__item"><span>1.</span> Покупайте, торгуйте и храните любые криптовалюты<span class="services__item-profit">600+</span></li>
-              <li class="services__item"><span>2.</span> Владельцы активных аккаунтов<span class="services__item-profit">300+ тыс.</span></li>
-              <li class="services__item"><span>3.</span> Собственный торговый автопилот<span class="services__item-profit">нет аналогов</span></li>
-              <li class="services__item"><span>4.</span> Комиссия за крипто транзакцию<span class="services__item-profit">мин – 5%</span></li>
-              <li class="services__item">5. Прямой доступ к наиболее прибыльным IPO, ETF, фондовым индексам по
-                энергетике, металлам, сельскому хозяйству, технологиям и многому другому</li>
-            </ul>
+      <div class="user__range-slider" id="range-slider"></div>
+    </div>
+    <section>
+      <div class="services" id="services">
+        <div class="mobile-only">
+          <div class="services__title-wrapper">
+            <img class="services__title-img" src="./img/service-shield.png" width="32" height="36" alt="Щит с галочкой">
+            <h2 class="services__title">Детально об услугах</h2>
           </div>
-          <div class="desktop-only">
-            <h2 class="services__title visually-hidden">Детально об услугах</h2>
-            <div class="info__slider" id="services__slider">
-              <div class="slide slide--first">
-                <div class="services__genetral">
-                  <img src="img/services1.jpg" alt="Калькулятор">
-                  <div class="services__slide-wrapper">
-                    <h3 class="services__slide-title">1. Покупайте, торгуйте и храните любые криптовалюты</h3>
-                    <div class="services__slide-amount">
-                      <img class="services__title-img" src="./img/service-shield-desktop.png" width="92" height="104"
-                        alt="Щит с галочкой">
-                      <span>600+</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide slide--second">
-                <div class="services__genetral">
-                  <img src="img/services2.jpg" alt="В офисе">
-                  <div class="services__slide-wrapper">
-                    <h3 class="services__slide-title">2. Владельцы активных аккаунтов</h3>
-                    <div class="services__slide-amount">
-                      <img class="services__title-img" src="./img/service-shield-desktop.png" width="92" height="104"
-                        alt="Щит с галочкой">
-                      <span>300+ тыс.</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide slide--third">
-                <div class="services__genetral">
-                  <img src="img/services3.jpg" alt="Автомобиль">
-                  <div class="services__slide-wrapper">
-                    <h3 class="services__slide-title">3. Собственный торговый автопилот</h3>
-                    <div class="services__slide-amount">
-                      <img class="services__title-img" src="./img/service-shield-desktop.png" width="92" height="104"
-                        alt="Щит с галочкой">
-                      <span>нет аналогов</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide slide--fourth">
-                <div class="services__genetral">
-                  <img src="img/services4.jpg" alt="Диаграма">
-                  <div class="services__slide-wrapper">
-                    <h3 class="services__slide-title">4. Комиссия за крипто транзакцию</h3>
-                    <div class="services__slide-amount">
-                      <img class="services__title-img" src="./img/service-shield-desktop.png" width="92" height="104"
-                        alt="Щит с галочкой">
-                      <span>мин – 5%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide slide--fifth">
-                <div class="services__genetral">
-                  <img src="img/services5.jpg" alt="Телефон">
-                  <div class="services__slide-wrapper">
-                    <h3 class="services__slide-title">5. Прямой доступ к наиболее прибыльным IPO, ETF, фондовым индексам
-                      по энергетике, металлам, сельскому хозяйству, технологиям и многому другому</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ul class="services__list">
+            <li class="services__item"><span>1.</span> Покупайте, торгуйте и храните любые криптовалюты<span
+                class="services__item-profit">600+</span></li>
+            <li class="services__item"><span>2.</span> Владельцы активных аккаунтов<span
+                class="services__item-profit">300+ тыс.</span></li>
+            <li class="services__item"><span>3.</span> Собственный торговый автопилот<span
+                class="services__item-profit">нет аналогов</span></li>
+            <li class="services__item"><span>4.</span> Комиссия за крипто транзакцию<span
+                class="services__item-profit">мин – 5%</span></li>
+            <li class="services__item">5. Прямой доступ к наиболее прибыльным IPO, ETF, фондовым индексам по
+              энергетике, металлам, сельскому хозяйству, технологиям и многому другому</li>
+          </ul>
         </div>
-        </div>
-        <div class="ecosystem">
-          <h2 class="ecosystem__title">Экосистема сбережения и&nbsp;приумножения</h2>
-          <form action="" method="POST" class="form" id="leadform2">
-            <label class="user-name-label" for="name">Ваше Имя</label>
-            <input class="user-name" type="text" name="name" placeholder="Имя" id="name2" />
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="your_email@gmail.com" id="email2" />
-            <label for="phone2">Контактный телефон</label>
-            <input type="tel" name="phone2" placeholder="" id="phone2" />
-            <input id="realPhone2" class="hidden-phone" type="hidden" name="phone" value="" />
-            <input type="hidden" name="currency" value="eur">
-            <input id="country2" type="hidden" name="country" value="ru">
-            <input type="hidden" name="campaign_name" value="SafeTi">
-
-            <button class="btn btn--tt-upper submit_btn" type="submit"><span>ОТКРЫТЬ СЧЕТ</span></button>
-            <div class="checkbox-group">
-              <input type="checkbox" id="agreement2" name="agreement" value="true">
-              <label for="agreement2" class="checkbox-label">Согласен с пользовательским<br> соглашением</label>
-            </div>
-            <div class="form_message error inactive">
-            </div>
-          </form>
-        </div>
-        <div class="call">
-          <h2 class="call__title">Готовы начать инвестировать и хотите дельный совет?</h2>
-          <div class="info__slider" id="call__slider">
+        <div class="desktop-only">
+          <h2 class="services__title visually-hidden">Детально об услугах</h2>
+          <div class="info__slider" id="services__slider">
             <div class="slide slide--first">
-              <picture>
-                <source media="(min-width: 1024px)" srcset="img/tinkof1-desktop.jpg">
-                <img src="img/tinkof1.jpg" width="375" height="185" alt="Задумчивый человек палец у подбородка">
-              </picture>
+              <div class="services__genetral">
+                <img src="img/services1.jpg" alt="Калькулятор">
+                <div class="services__slide-wrapper">
+                  <h3 class="services__slide-title">1. Покупайте, торгуйте и храните любые криптовалюты</h3>
+                  <div class="services__slide-amount">
+                    <img class="services__title-img" src="./img/service-shield-desktop.png" width="92" height="104"
+                      alt="Щит с галочкой">
+                    <span>600+</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="slide slide--second">
-              <picture>
-                <source media="(min-width: 1024px)" srcset="img/tinkof2-desktop.jpg">
-                <img src="img/tinkof2.jpg" width="375" height="185" alt="Задумчивый человек палец опёрся на кулак">
-              </picture>
+              <div class="services__genetral">
+                <img src="img/services2.jpg" alt="В офисе">
+                <div class="services__slide-wrapper">
+                  <h3 class="services__slide-title">2. Владельцы активных аккаунтов</h3>
+                  <div class="services__slide-amount">
+                    <img class="services__title-img" src="./img/service-shield-desktop.png" width="92" height="104"
+                      alt="Щит с галочкой">
+                    <span>300+ тыс.</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="slide slide--third">
-              <picture>
-                <source media="(min-width: 1024px)" srcset="img/tinkof3-desktop.jpg">
-                <img src="img/tinkof3.jpg" width="375" height="185" alt="Задумчивый человек взгляд вперёд">
-              </picture>
+              <div class="services__genetral">
+                <img src="img/services3.jpg" alt="Автомобиль">
+                <div class="services__slide-wrapper">
+                  <h3 class="services__slide-title">3. Собственный торговый автопилот</h3>
+                  <div class="services__slide-amount">
+                    <img class="services__title-img" src="./img/service-shield-desktop.png" width="92" height="104"
+                      alt="Щит с галочкой">
+                    <span>нет аналогов</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide--fourth">
+              <div class="services__genetral">
+                <img src="img/services4.jpg" alt="Диаграма">
+                <div class="services__slide-wrapper">
+                  <h3 class="services__slide-title">4. Комиссия за крипто транзакцию</h3>
+                  <div class="services__slide-amount">
+                    <img class="services__title-img" src="./img/service-shield-desktop.png" width="92" height="104"
+                      alt="Щит с галочкой">
+                    <span>мин – 5%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide--fifth">
+              <div class="services__genetral">
+                <img src="img/services5.jpg" alt="Телефон">
+                <div class="services__slide-wrapper">
+                  <h3 class="services__slide-title">5. Прямой доступ к наиболее прибыльным IPO, ETF, фондовым индексам
+                    по энергетике, металлам, сельскому хозяйству, технологиям и многому другому</h3>
+                </div>
+              </div>
             </div>
           </div>
-          <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>ПЕРЕЗВОНИТЕ МНЕ</span></a>
         </div>
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <div class="logo logo--footer">
-        <img class="logo__img logo__img--footer" src="img/logo.png" alt="Шит-лабиринт" width="33" height="36">
-        <span class="logo__name logo__name--footer">SafeTi © 2022</span>
       </div>
-      <a class="page-footer__policy" href="#">Privacy policy</a>
-    </footer>
+      </div>
+      <div class="ecosystem">
+        <h2 class="ecosystem__title">Экосистема сбережения и&nbsp;приумножения</h2>
+        <form action="" method="POST" class="form" id="leadform2">
+          <label class="user-name-label" for="name">Ваше Имя</label>
+          <input class="user-name" type="text" name="name" placeholder="Имя" id="name2" />
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="your_email@gmail.com" id="email2" />
+          <label for="phone2">Контактный телефон</label>
+          <input type="tel" name="phone2" placeholder="" id="phone2" />
+          <input id="realPhone2" class="hidden-phone" type="hidden" name="phone" value="" />
+          <input type="hidden" name="currency" value="eur">
+          <input id="country2" type="hidden" name="country" value="ru">
+          <input type="hidden" name="campaign_name" value="SafeTi">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
-    <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
+          <button class="btn btn--tt-upper submit_btn" type="submit"><span>ОТКРЫТЬ СЧЕТ</span></button>
+          <div class="checkbox-group">
+            <input type="checkbox" id="agreement2" name="agreement" value="true">
+            <label for="agreement2" class="checkbox-label">Согласен с пользовательским<br> соглашением</label>
+          </div>
+          <div class="form_message error inactive">
+          </div>
+        </form>
+      </div>
+      <div class="call">
+        <h2 class="call__title">Готовы начать инвестировать и хотите дельный совет?</h2>
+        <div class="info__slider" id="call__slider">
+          <div class="slide slide--first">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/tinkof1-desktop.jpg">
+              <img src="img/tinkof1.jpg" width="375" height="185" alt="Задумчивый человек палец у подбородка">
+            </picture>
+          </div>
+          <div class="slide slide--second">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/tinkof2-desktop.jpg">
+              <img src="img/tinkof2.jpg" width="375" height="185" alt="Задумчивый человек палец опёрся на кулак">
+            </picture>
+          </div>
+          <div class="slide slide--third">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/tinkof3-desktop.jpg">
+              <img src="img/tinkof3.jpg" width="375" height="185" alt="Задумчивый человек взгляд вперёд">
+            </picture>
+          </div>
+        </div>
+        <a class="btn btn--tt-upper btn--p6-14" href="#legend"><span>ПЕРЕЗВОНИТЕ МНЕ</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="logo logo--footer">
+      <img class="logo__img logo__img--footer" src="img/logo.png" alt="Шит-лабиринт" width="33" height="36">
+      <span class="logo__name logo__name--footer">SafeTi © 2022</span>
+    </div>
+    <a class="page-footer__policy" href="conditions.html">Privacy policy</a>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+    integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

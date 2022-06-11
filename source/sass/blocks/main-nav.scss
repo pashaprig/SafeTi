@@ -155,6 +155,7 @@
 
 .main-nav__open-btn-text {
   font-family: "Segoe-UI", "Arial", sans-serif;
+  color: $basic-black;
 
   @media (max-width: $tablet-width) {
     font-weight: 350;

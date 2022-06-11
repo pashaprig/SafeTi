@@ -13,6 +13,7 @@ $('#call__slider').slick({
   arrows: false,
   fade: true,
   zIndex: 0,
+  pauseOnHover: false,
 });
 
 $('#services__slider').slick({
