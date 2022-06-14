@@ -34,16 +34,16 @@
 }
 .review__card--user{
     &1::before{
-        background-image: url(./../img/avatars/avatar1.png);
+        background-image: url(./../img/avatars/avatar4.png);
     }
     &2::before{
-        background-image: url(./../img/avatars/avatar2.png);
+        background-image: url(./../img/avatars/avatar1.png);
     }
     &3::before{
-        background-image: url(./../img/avatars/avatar3.png);
+        background-image: url(./../img/avatars/avatar2.png);
     }
     &4::before{
-        background-image: url(./../img/avatars/avatar4.png);
+        background-image: url(./../img/avatars/avatar3.png);
     }
 }
 .review-name {
