@@ -15,7 +15,7 @@ $(".users__slider").slick({
 //range_slider
 $(".user__range-slider").slider({
     min: 0,
-    max: 8,
+    max: 7,
     step: 1,
     tooltip: "hide",
     slide: function (event, ui) {
