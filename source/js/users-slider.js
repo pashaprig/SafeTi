@@ -23,6 +23,10 @@ $(".user__range-slider").slider({
     },
 });
 
+$('.users__slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+    $(".user__range-slider").slider("value", currentSlide)
+});
+
 $(".btn--toogle").click(function(){
     $(this).prev(".review__text").toggleClass("review__text--open");
     $(this).toggleClass("open")
